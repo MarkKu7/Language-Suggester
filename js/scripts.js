@@ -11,7 +11,6 @@ $(document).ready(function () {
 
     event.preventDefault();
     $("#inputName").text(name);
-
     if (!name) {
       $("#noname").show();
     } else if (total >= 11) {
@@ -19,16 +18,19 @@ $(document).ready(function () {
       $("#javascript").show();
       $("#python").hide();
       $("#csharp").hide();
+      $("#noname").hide();
     } else if (total > 7 && total < 10) {
       $("#result").show();
       $("#javascript").hide();
       $("#python").show();
       $("#csharp").hide();
+      $("#noname").hide();
     } else {
       $("#result").show();
       $("#javascript").hide();
       $("#python").hide();
       $("#csharp").show();
+      $("#noname").hide();
     }
 
     });
