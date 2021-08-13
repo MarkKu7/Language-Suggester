@@ -5,3 +5,14 @@
 #noname {
   display: none;
 }
+
+.question {
+  margin-top: 10px;
+}
+
+body {
+  background-color: #cccccc;
+  position: relative;
+  left: 100px;
+}
+
